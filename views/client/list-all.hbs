@@ -22,7 +22,7 @@
             <td>{{this.nextContactAt}}</td>
             <td>
                 <a href="/client/{{this.id}}">Szczegóły</a>
-                <form method="delete" action="/client/{{this.id}}">
+                <form method="POST" action="/client/{{this.id}}?_method=DELETE">
                     <button type="submit">Usuń</button>
                 </form>
             </td>

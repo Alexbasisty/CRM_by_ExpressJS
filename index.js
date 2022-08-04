@@ -1,5 +1,7 @@
 const express = require('express');
 const { engine } = require('express-handlebars');
+const methodOverride = require('method-override');
+
 const { clientRouter } = require('./routers/client');
 const { homeRouter } = require('./routers/home');
 const { db } = require('./utils/db');
@@ -11,6 +13,7 @@ app.use(express.urlencoded({
 }));
 app.use(express.static('public'));
 app.use(express.json());
+app.use(methodOverride('_method'));
 
 app.engine('.hbs', engine({
     extname: '.hbs',
