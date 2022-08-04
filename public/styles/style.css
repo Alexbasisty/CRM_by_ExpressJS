@@ -1,0 +1,23 @@
+table {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+tr {
+    margin: 2px;
+    background: rgb(230, 224, 224);
+}
+
+tr:nth-child(2n) {
+    background: rgb(245, 228, 228);
+}
+
+thead tr, .header-on-left th {
+    background: rgb(143, 137, 137);
+}
+
+
+td, th {
+    padding: 6px;
+}
