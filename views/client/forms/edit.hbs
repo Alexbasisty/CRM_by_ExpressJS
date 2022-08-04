@@ -1,0 +1,23 @@
+<h2>Edytujesz {{client.name}} <small>{{client.id}}</small></h2>
+
+<form method="post" action="/client/{{client.id}}?_method=PUT">
+    <label>
+        <p>E-mail</p>
+        <p><input type="email" name="email" value={{client.email}}></p>
+    </label>
+    <label>
+        <p>Imię</p>
+        <p><input type="text" name="name" value={{client.name}}></p>
+    </label>
+    <label>
+        <p>Następny kontakt</p>
+        <p><input type="date" name="nextContactAt" value={{client.nextContantAt}}></p>
+    </label>
+    <label>
+        <p>Notatki</p>
+        <p><textarea name="notes">{{client.notes}}</textarea></p>
+    </label>
+    <p>
+        <button type="submit">Zapisz</button>
+    </p>
+</form>
