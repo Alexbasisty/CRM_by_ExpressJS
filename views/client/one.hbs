@@ -1,0 +1,23 @@
+<h2>{{client.name}}</h2>
+<table class="header-on-left">
+    <tbody>
+        <tr>
+            <th>E-mail</th>
+            <td><a href="mailto:{{this.email}}" target="_blank">{{client.email}}</a></td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>{{client.name}}</td>
+        </tr>
+        <tr>
+            <th>Data następnego kontaktu</th>
+            <td>{{client.nextContactAt}}</td>
+        </tr>
+        <tr>
+            {{#if client.notes}}
+            <th>Notatki</th>
+            <td>{{client.notes}}</td>
+            {{/if}}
+        </tr>
+    </tbody>
+</table>

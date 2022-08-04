@@ -21,5 +21,5 @@ app.use('/', homeRouter);
 app.use('/client', clientRouter);
 
 app.listen(3000, 'localhost', () => {
-    console.log('Localhost is ON');
+    console.log('Localhost is ON, adress => http://localhost:3000/');
 });
