@@ -1,3 +1,3 @@
-# Framework - ExpressJS
+# Zarządanie listą klientów za pomocą frameworku ExpressJS
 
-## App - Clients CRM, REST 'style' ;-)
+## App - Clients CRM, RESTFul
