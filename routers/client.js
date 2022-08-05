@@ -15,7 +15,7 @@ clientRouter
 
         res.render('client/one', {
             client: db.getOne(id),
-        })
+        });
     })
 
     .post('/', (req, res) => {
